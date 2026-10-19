@@ -38,5 +38,6 @@ public class Main {
         } else {
             System.out.println("В библиотеке нет книг.");
         }
+        System.out.println("Привет!";
     }
 }
