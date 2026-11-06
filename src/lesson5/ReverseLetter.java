@@ -1,9 +1,19 @@
 package lesson5;
 
-public class ReverseLetter {
-    public static void main(String[] args) {
-        String input = "J@va the be$t!123";
+import java.util.Scanner;
 
+public class ReverseLetter {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Введите строку;");
+        String input = scanner.nextLine();
+
+        System.out.println(reverseLetters(input));
+    }
+
+    public static String reverseLetters(String input) {
         char[] chars = input.toCharArray();
 
         int left = 0;
@@ -24,7 +34,6 @@ public class ReverseLetter {
             }
         }
 
-        System.out.println(new String(chars));
-
+        return new String(chars);
     }
 }
